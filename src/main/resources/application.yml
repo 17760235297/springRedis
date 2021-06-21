@@ -1,0 +1,25 @@
+server:
+   servlet:
+      context-path: /demo
+   port: 8081
+
+spring:
+   redis:
+     host: 127.0.0.1
+     port: 6379
+   rabbitmq:
+     host: 127.0.0.1
+     port: 5672
+     username: guest
+     password: guest
+
+self:
+   message:
+      data: welcome
+      
+management:
+   endpoints:
+      web:
+         exposure:
+            include: health,info,httptrace    
+ 
